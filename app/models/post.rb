@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+ validate_clickbait(:title)
  validates :title, presence: true, title: true
  validates :content, length: { minimum: 250 }
  validates :summary, length: { maximum: 250 }
