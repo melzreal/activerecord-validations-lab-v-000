@@ -1,5 +1,5 @@
 class TitleValidator < ActiveModel::EachValidator
-  def validate(title)
+  def validate_each(title)
     options = ["Won't Believe", "Secret", "Top [number]", "Guess"]
       options.each do |check|
         unless title.include?(check)
