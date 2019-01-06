@@ -1,4 +1,4 @@
-class BaitValidator < ActiveModel::EachValidator
+class TitleValidator < ActiveModel::EachValidator
   def validate(title)
     options = ["Won't Believe", "Secret", "Top [number]", "Guess"]
       options.each do |check|
